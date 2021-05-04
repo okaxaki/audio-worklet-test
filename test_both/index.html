@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="./index.js"></script>
+  <style>
+    button#play:after { content: 'PLAY'; }
+    .playing button#play:after { content: 'NOW PLAYING (RELOAD BROWSER TO STOP)'; }
+  </style>
+</head>
+
+<body>
+  <div>
+    <select id="type">
+      <option value="worklet">AudioWorklet</option>
+      <option value="script">ScriptProcessor</option>
+    </select>
+  </div>
+  <button id="play"></button>
+</body>
+
+</html>
